@@ -1,0 +1,21 @@
+# Byte-compiled files
+*.pyc
+__pycache__/
+
+# Environment variables
+.env
+
+# Local database
+db.sqlite3
+
+# Media files
+media/
+
+# Static and cache files
+staticfiles/
+
+# OS and editor-specific files
+.DS_Store
+.idea/
+.vscode/
+venv/
