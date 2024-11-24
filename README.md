@@ -69,7 +69,7 @@ The **File Management System (FMS)** is a backend solution built with Django tha
 
 1. **Clone the Repository**:
     ```bash
-    git clone https://github.com/yourusername/fms.git
+    git clone https://github.com/SankareshwaranS/FileManagementSystem.git
     cd fms
     ```
 
@@ -79,18 +79,15 @@ The **File Management System (FMS)** is a backend solution built with Django tha
     ```
 
 3. **Database Configuration**:  
-   Update the `DATABASES` setting in `settings.py` with your PostgreSQL credentials:
-    ```python
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': 'fms_db',
-            'USER': 'your_postgres_user',
-            'PASSWORD': 'your_postgres_password',
-            'HOST': 'localhost',
-            'PORT': '5432',
-        }
-    }
+   Create a `.env` file in the project root with the following content:
+    ```env
+    # Database Configuration
+    DB_ENGINE=django.db.backends.postgresql
+    DB_NAME=fms_db
+    DB_USER=your_postgres_user
+    DB_PASSWORD=your_postgres_password
+    DB_HOST=localhost
+    DB_PORT=5432
     ```
 
 4. **Run Migrations**:
